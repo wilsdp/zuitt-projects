@@ -1,0 +1,63 @@
+Test Plan: Portfolio Page Test Suite
+
+1. Test Objectives and Scope
+
+   - Objective: 
+     - Validate the functionality and design aspects of the portfolio page through automated testing using Selenium WebDriver.
+
+   - Scope:
+     - This test plan aims to verify the correctness and appearance of UI elements on the portfolio page, including the navbar, headings, links, and contact form inputs.
+
+2. Testing Approach
+
+   - Approach:
+     - Conduct automated black-box testing utilizing Selenium WebDriver along with Chai assertions to ensure the integrity of the portfolio page's functionality and UI without accessing its internal code.
+
+3. Test Cases
+
+   - Navbar:
+     1. Test Case 1: Page contains a navbar
+        - Ensure the presence of a navbar element on the portfolio page.
+     2. Test Case 2: Navbar background color is rgb(255, 193, 7)
+        - Verify that the background color of the navbar matches the specified RGB value.
+     3. Test Case 3: Page body font is not Times New Roman
+        - Confirm that the body font of the page is not set to Times New Roman.
+     4. Test Case 4: Page heading fonts are Montserrat
+        - Validate that heading fonts on the page are set to Montserrat.
+     5. Test Case 5: Element with client name "Jeff Bezos" is an h1 or h2
+        - Ensure that the element containing the text "Jeff Bezos" is either an h1 or h2 heading.
+     6. Test Case 6: Element with text "Web Developer" is an h3 or h4
+        - Verify that the element containing the text "Web Developer" is either an h3 or h4 heading.
+     7. Test Case 7: Page has a link to GitLab
+        - Confirm the presence of a link to GitLab on the portfolio page.
+     8. Test Case 8: Page has a link to GitHub
+        - Ensure the availability of a link to GitHub on the portfolio page.
+     9. Test Case 9: Page has a link to Facebook
+        - Validate the existence of a link to Facebook on the portfolio page.
+     10. Test Case 10: Page has a link to LinkedIn
+         - Confirm the presence of a link to LinkedIn on the portfolio page.
+     11. Test Case 11: Page has a contact form
+         - Ensure the presence of at least one contact form on the portfolio page.
+     12. Test Case 12: Page has a text input in the contact form
+         - Validate the existence of text input fields within the contact form.
+     13. Test Case 13: Page has an email input in the contact form
+         - Confirm the presence of email input fields within the contact form.
+     14. Test Case 14: Page has a textarea in the contact form
+         - Ensure the availability of a textarea element within the contact form.
+
+4. Test Environment
+
+   - Environment:
+     - Utilize a testing environment equipped with Selenium WebDriver, Mocha framework, Chai assertion library, and Node.js for executing automated UI tests.
+
+5. Execution and Reporting
+
+   - Execution:
+     - Execute the test cases using the Mocha framework integrated with Selenium WebDriver to interact with and validate the portfolio page's UI components.
+   - Reporting:
+     - Utilize Mocha Reporter to log test results, including the pass/fail status, in a structured format for analysis and debugging purposes.
+
+6. Schedule
+
+   - Timeline:
+     - Conduct UI testing parallel to the development phase, ensuring continuous integration with each build and pre-release testing before major deployments.

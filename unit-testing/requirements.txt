@@ -1,0 +1,85 @@
+Requirements Analysis for Portfolio Page Test Suite
+
+1. Project Overview
+
+    Purpose:  
+    The purpose of this test suite is to ensure the functionality and design integrity of the portfolio page of a web application. It aims to validate various aspects of the page, including the presence of essential elements, styling, and overall layout.
+
+2. Functional Requirements
+
+    Description:  
+    The portfolio page should meet specific criteria regarding the presence and styling of various elements. These criteria include:
+
+    - Navbar:
+        - The page should contain a navbar element.
+        - The navbar should have a background color of `rgb(255, 193, 7)`.
+
+    - Body Font:
+        - The body font should not be Times New Roman.
+
+    - Heading Fonts:
+        - The page should use Montserrat font for headings (h1, h2).
+
+    - Client Name Element:
+        - The page should contain an element with the text "Jeff Bezos".
+        - This element should be either an h1 or h2 heading.
+
+    - "Web Developer" Text Element:
+        - The page should contain an element with the text "Web Developer".
+        - This element should be either an h3 or h4 heading.
+
+    - Social Media Links:
+        - The page should have links to GitLab, GitHub, LinkedIn, and Facebook.
+
+    - Contact Form:
+        - The page should have at least one contact form.
+        - The contact form should include text input fields, email input fields, and a textarea.
+
+3. Technical Requirements
+
+    Dependencies:
+    - `selenium-webdriver`: Used for browser automation.
+    - `selenium-webdriver/firefox`: Provides Firefox-specific configurations.
+    - `fs`: Node.js package for file system operations.
+    - `chai`: Assertion library for test validation.
+
+    Environment:
+    - Node.js environment required for running the test suite.
+    - Firefox browser used for headless testing.
+    - "mochawesome" - used for Generating HTML and JSON Reports
+
+4. Acceptance Criteria
+
+    Test Cases:
+
+    1. Page Has Navbar:
+        - The test should pass if the page contains a navbar element.
+
+    2. Navbar Color Verification:
+        - The test should pass if the navbar background color is `rgb(255, 193, 7)`.
+
+    3. Body Font Verification:
+        - The test should pass if the body font is not Times New Roman.
+
+    4. Heading Font Verification:
+        - The test should pass if the heading fonts are Montserrat.
+
+    5. Client Name Element Existence:
+        - The test should pass if the page contains an element with the text "Jeff Bezos", which is either an h1 or h2 heading.
+
+    6. "Web Developer" Text Element Verification:
+        - The test should pass if the page contains an element with the text "Web Developer", which is either an h3 or h4 heading.
+
+    7. Social Media Links Existence:
+        - The test should pass if the page contains links to GitLab, GitHub, LinkedIn, and Facebook.
+
+    8. Contact Form Existence:
+        - The test should pass if the page contains at least one contact form with appropriate input fields.
+
+5. Constraints and Assumptions
+
+    - The test suite assumes the presence of a static HTML page located in the `src` directory.
+    - All tests are executed in a headless Firefox browser environment.
+    - Test correctness depends on accurate element selectors and expected values.
+    - Development and testing are constrained by available time and resources.
+
